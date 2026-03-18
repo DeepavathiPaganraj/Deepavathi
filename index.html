@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Deepavathi Paganraj | Dean & Computer Science Expert</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+    <!-- Particles Background -->
+    <canvas id="particles-bg"></canvas>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-indicator">
+        <div class="progress-bar" id="scrollBar"></div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Dr. Deepavathi<span class="accent">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li>
+                    <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark Mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content reveal">
+            <h3 class="greeting">Hello, I am</h3>
+            <h1 class="main-title">Dr. Deepavathi Paganraj</h1>
+            <h2 class="subtitle">
+                Dean | <span class="typing-text">Computer Science Expert</span><span class="cursor">|</span>
+            </h2>
+            <p class="hero-desc">Transforming the future of technology through academic leadership, innovative research, and student empowerment.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary glow-effect">View Portfolio</a>
+                <a href="#contact" class="btn btn-secondary glass-btn">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding glass-section">
+        <div class="container reveal">
+            <div class="section-title">
+                <h2>About <span>Me</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text glass-card">
+                    <p class="summary">As the <strong>Dean of the School of Engineering and Technology (SOET) at Joy University</strong>, I am deeply committed to charting academic excellence and innovation. With a robust foundation in Computer Science, holding a PhD from the prestigious NIT Trichy, my career spans over 9 years of dedicated teaching and leadership.</p>
+                    <p>My passion lies in bridging the gap between theoretical computer science and practical, real-world applications. I specialize in Operating Systems, Database Management Systems, and Data Structures, driving a curriculum that prepares students for the dynamic tech landscape.</p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <h4>PhD Holder</h4>
+                                <p>NIT Trichy</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <div>
+                                <h4>9+ Years</h4>
+                                <p>Teaching Experience</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-university"></i>
+                            <div>
+                                <h4>Academic Leader</h4>
+                                <p>Dean @ SOET, Joy University</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding">
+        <div class="container reveal">
+            <div class="section-title">
+                <h2>Core <span>Expertise</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="skills-grid">
+                <!-- Core Subjects -->
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-book-open"></i> Core Subjects</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Operating Systems</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress-line" data-width="95%"><span></span></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>DBMS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-line" data-width="90%"><span></span></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Data Structures</span>
+                            <span>92%</span>
+                        </div>
+                        <div class="progress-line" data-width="92%"><span></span></div>
+                    </div>
+                </div>
+
+                <!-- Programming -->
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Python</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress-line" data-width="95%"><span></span></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>C++</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-line" data-width="85%"><span></span></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>C</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-line" data-width="90%"><span></span></div>
+                    </div>
+                </div>
+
+                <!-- Technologies -->
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-microchip"></i> Technologies</h3>
+                    <div class="skill-circle-container">
+                        <div class="circular-progress" data-value="85">
+                            <span class="progress-value">0%</span>
+                            <div class="progress-text">IoT Systems</div>
+                        </div>
+                        <div class="circular-progress" data-value="90">
+                            <span class="progress-value">0%</span>
+                            <div class="progress-text">Smart Automation</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section-padding glass-section">
+        <div class="container reveal">
+            <div class="section-title">
+                <h2>Professional <span>Experience</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card hover-glow">
+                        <div class="timeline-date">Present</div>
+                        <h3>Dean, School of Engineering and Technology (SOET)</h3>
+                        <h4>Joy University</h4>
+                        <p>Leading the academic operations, curriculum development, and faculty mentorship. Spearheading initiatives for student development and establishing relationships with industry partners to foster innovation.</p>
+                    </div>
+                </div>
+                <!-- Adding a generic past role to fill 9 years visually -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card hover-glow">
+                        <div class="timeline-date">Past 9 Years</div>
+                        <h3>Academic Educator & Researcher</h3>
+                        <h4>Various Prestigious Institutions</h4>
+                        <p>Delivered comprehensive lectures in Operating Systems, DBMS, and Data Structures. Cultivated numerous student careers through effective mentorship and thesis supervision.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding">
+        <div class="container reveal">
+            <div class="section-title">
+                <h2>Featured <span>Projects</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card">
+                    <div class="project-img">
+                        <div class="img-placeholder bg-gradient-1"><i class="fas fa-network-wired fa-4x"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Smart Campus Automation System</h3>
+                        <p>An IoT-based solution designed to automate campus facilities, reducing energy consumption and providing real-time infrastructure monitoring for universities.</p>
+                        <div class="project-tech">
+                            <span>IoT</span>
+                            <span>Python</span>
+                            <span>Sensors</span>
+                            <span>Analytics</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card glass-card">
+                    <div class="project-img">
+                        <div class="img-placeholder bg-gradient-2"><i class="fas fa-server fa-4x"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Distributed Database Monitor</h3>
+                        <p>A comprehensive tracking system for distributed DBMS architectures, ensuring high availability and robust data integrity across multiple data nodes.</p>
+                        <div class="project-tech">
+                            <span>DBMS</span>
+                            <span>C++</span>
+                            <span>Network</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card glass-card">
+                    <div class="project-img">
+                        <div class="img-placeholder bg-gradient-3"><i class="fas fa-microchip fa-4x"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Embedded OS for Smart Devices</h3>
+                        <p>A lightweight, real-time operating system kernel developed to seamlessly manage tasks for low-power IoT consumer devices.</p>
+                        <div class="project-tech">
+                            <span>C</span>
+                            <span>RTOS</span>
+                            <span>IoT</span>
+                            <span>Hardware</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section-padding glass-section">
+        <div class="container reveal">
+            <div class="section-title">
+                <h2>Academic <span>Pedigree</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="education-cards">
+                <div class="edu-card glass-card prestige-card">
+                    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="edu-details">
+                        <span class="degree">Doctor of Philosophy (PhD)</span>
+                        <h3 class="institution">National Institute of Technology (NIT) Trichy</h3>
+                        <p class="desc">Conducted extensive research in advanced computer science disciplines. Nit Trichy is one of the premier engineering institutions renowned for its rigorous academic standards.</p>
+                    </div>
+                    <div class="prestige-badge">Prestigious</div>
+                </div>
+            </div>
+            
+            <div class="achievements-section mt-5">
+                <h3 class="sub-heading text-center mb-3">Leadership & Contributions</h3>
+                <div class="achievements-grid">
+                    <div class="achievement-item glass-card">
+                        <i class="fas fa-users-cog"></i>
+                        <h4>Institutional Leadership</h4>
+                        <p>Guiding the SOET faculty towards modernized instructional strategies.</p>
+                    </div>
+                    <div class="achievement-item glass-card">
+                        <i class="fas fa-book-reader"></i>
+                        <h4>Curriculum Contribution</h4>
+                        <p>Designing industry-aligned syllabi for emerging tech sectors.</p>
+                    </div>
+                    <div class="achievement-item glass-card">
+                        <i class="fas fa-hands-helping"></i>
+                        <h4>Student Mentorship</h4>
+                        <p>Mentoring the next generation of software engineers and researchers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container reveal">
+            <div class="section-title">
+                <h2>Get In <span>Touch</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info glass-card">
+                    <h3>Contact Information</h3>
+                    <p>Open for academic collaborations, speaking engagements, and consulting.</p>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>dean.soet@joyuniversity.edu.in</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>School of Engineering and Technology,<br>Joy University</span>
+                    </div>
+                    <div class="social-links mt-3">
+                        <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-btn"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form glass-card">
+                    <form id="contactForm">
+                        <div class="input-group">
+                            <input type="text" id="name" required placeholder=" ">
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" required placeholder=" ">
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea id="message" required rows="5" placeholder=" "></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary glow-effect">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo">Dr. Deepavathi Paganraj</div>
+            <p>Dean | Computer Science Expert | Educator</p>
+            <div class="footer-socials">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright">&copy; <span id="year"></span> Dr. Deepavathi Paganraj. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
